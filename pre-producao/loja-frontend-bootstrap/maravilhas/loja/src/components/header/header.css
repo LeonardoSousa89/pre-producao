@@ -1,0 +1,73 @@
+.largeDeviceComponent{
+
+}
+.maravilha{
+    font-size: xx-large;
+
+    width: 100%;
+    /*background-color: black;*/
+    background: #007bff;
+
+    padding: 10px;
+
+
+    text-shadow: 0px 1px 1px whitesmoke;
+}
+.largeDeviceComponent strong{
+    background: linear-gradient(67deg, rgba(0,0,0,0.001) 45%, rgba(0,0,0,0.2) 55%);
+    border-top-right-radius: 17px;
+    padding: 6px;
+}
+.title-header{
+    color: white;
+}
+.home,
+.about,
+.form,
+.loja{
+    font-weight: bolder;
+    background: whitesmoke;
+
+    color:#007bff;
+
+    transition-property: background;
+    transition-duration: 0.5s;
+}
+.home:hover{
+    background: rgba(70, 42, 42, 0.1);
+}
+.about:hover{
+    background: rgba(0,0,0,0.1);
+}
+.form:hover{
+    background: rgba(0,0,0,0.1);
+}
+.loja:hover{
+    background: rgba(0,0,0,0.1);
+}
+.littleDeviceComponent{
+    display: none;
+}
+
+
+@media(max-width:800px){
+    .largeDeviceComponent{display: none;}
+    .littleDeviceComponent{
+        display: flex;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .maravilhas-little strong{
+        background: linear-gradient(67deg, rgba(0,0,0,0.001) 45%, rgba(0,0,0,0.2) 55%);
+        padding: 6px;
+        border-top-right-radius:17px ;
+    }
+    .home-little,
+    .about-little,
+    .form-little,
+    .loja-little
+    {
+        font-weight: bolder;
+    }
+}
