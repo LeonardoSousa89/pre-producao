@@ -1,12 +1,25 @@
-import React, {Component} from 'react'
+import React, {Component,useState} from 'react'
 import './form.css'
 
 export default class Form extends Component{
+
+   
+
+
     render(){
         return(
             <div>
-                <h1>form</h1>
+               <div className="formLargeDeviceComponent">
+                    <h1>large</h1>
+               </div>
+
+               <div className="formLittleDeviceComponent">
+                    <h1>little</h1>
+               </div>      
             </div>
         )
     }
 }
+
+
+ 

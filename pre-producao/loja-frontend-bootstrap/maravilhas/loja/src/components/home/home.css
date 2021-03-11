@@ -1,0 +1,170 @@
+.homeLargeDeviceComponent{
+    display: flex;
+    flex-direction: column;
+}
+.d-block{
+    height: 400px;
+}
+/*
+.headerAnimation{
+    margin: 10px 10px;
+}*/
+.card1{
+    grid-area: card1;
+    margin:3px 3px;
+    border:solid 1px whitesmoke;
+    border-radius:3px;
+    background: linear-gradient(63deg,#007bff 45% , #0069ff 55%);
+
+    max-height: 500px;
+
+    box-shadow:1px 1px 5px #0069ff;
+
+    text-align: center;
+
+    cursor:pointer;
+}
+.card2{
+    grid-area: card2;
+    margin:3px 3px;
+    border:solid 1px whitesmoke;
+    border-radius:3px;
+    background:linear-gradient(63deg,#007bff 45% , #0069ff 55%);
+
+    max-height: 500px;
+
+    box-shadow:1px 1px 5px #0069ff;
+
+    text-align: center;
+
+    cursor:pointer;
+}
+.card3{
+    grid-area: card3;
+    margin:3px 3px;
+    border:solid 1px whitesmoke;
+    border-radius:3px;
+    background:linear-gradient(63deg,#007bff 45% , #0069ff 55%);
+
+    max-height: 500px;
+
+    box-shadow:1px 1px 5px #0069ff;
+
+    text-align: center;
+
+    cursor:pointer;
+}
+.card4{
+    grid-area: card4;
+    margin:3px 3px;
+    border:solid 1px whitesmoke;
+    border-radius:3px;
+    background:linear-gradient(63deg,#007bff 45% , #0069ff 55%);
+
+    max-height: 500px;
+
+    box-shadow:1px 1px 5px #0069ff;
+
+    text-align: center;
+
+    cursor:pointer;
+}
+.cardPromotion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        'card1  card2'
+        'card3  card4'
+    ;
+    padding: 10px;
+
+    margin: 50px 0;
+}
+.ComponentCardpropsImg{
+    height: 60%;
+    width: 100%;
+}
+.socialComponentFooterHome{
+    grid-area:social;
+    
+    margin-top: 20px;
+    margin-left: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contatoComponentFooterHome{
+    grid-area: contato;
+}
+.footerHome{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+        'social contato'
+    ;
+
+    height: 100px;
+    margin-bottom: 50px;
+}
+.contatoComponentFooterHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.title{
+    margin-left: 3em;
+    background: rgba(0,0,0,0.3);
+
+    max-width: 86%;
+
+    padding: 3px;
+}
+.phoneComponentHome,.mailComponentHome{
+    margin-left: 6em;
+}  
+.content{
+    margin-left: 10px;
+}
+.homeLittleDeviceComponent{
+    display: none;
+}
+
+
+
+
+@media(max-width:800px){
+    .homeLargeDeviceComponent{
+        display: none;
+    }
+    .homeLittleDeviceComponent{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerHome{
+        display: none;
+    }
+    .footerHomeLittleDeviceComponent,
+    .socialLittleDeviceComponentFooterHome,
+    .contatoLittleDeviceComponentFooterHome{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerHomeLittleDeviceComponent{
+        margin-bottom: 58px;
+    }
+    .titleLittleDevicesComponent{
+
+    }
+    .phoneLittleDeviceComponentHome{
+
+    }
+    .mailLittleDeviceComponentHome{
+
+    }
+    .d-block{
+        height: 200px;
+    }
+}

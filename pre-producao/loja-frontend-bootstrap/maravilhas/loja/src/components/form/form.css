@@ -1,0 +1,15 @@
+.formLargeDeviceComponent{
+
+}
+.formLittleDeviceComponent{
+    display: none;
+}
+
+@media(max-width:700px){
+    .formLargeDeviceComponent{
+        display: none;
+    }
+    .formLittleDeviceComponent{
+        display: flex;
+    }
+}
