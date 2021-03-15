@@ -170,7 +170,7 @@ export default class Header extends Component{
                                                Top H+ Infrared.
                                                &rdquo;"
                                 />
-                        </div>
+                        </div>   
                         <div className="card4LittleDeviceComponent">
                             <Cards 
                                     url={Squeeze}
