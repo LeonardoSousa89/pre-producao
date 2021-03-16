@@ -1,0 +1,82 @@
+.auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+.login{
+    width: 100%;
+}
+.tabela{
+    width: 100%;
+}
+.maravilhas-little strong{
+    background: linear-gradient(67deg, rgba(0,0,0,0.001) 45%, rgba(0,0,0,0.2) 55%);
+    padding: 6px;
+    border-top-right-radius:17px ;
+}
+.adm{
+    margin: 0  100px;
+}
+.card-login{
+    margin: 10%  20%;
+
+    border: rgba(0,0,0,0.05) 1px solid;
+    border-radius:6px;
+
+    padding: 10px;
+
+    width: 40%;
+    height: 350px;
+
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+
+    background: linear-gradient(63deg, white 45%, whitesmoke 55% );
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    overflow: hidden;
+}
+.login-text{
+    color: #0069ff ;
+}
+.login-input{
+    border: rgba(0,0,0,0.2) solid 0.5px;
+    outline: none;
+
+    padding: 5px;
+
+    width: 60%;
+}
+.button{
+    width: 60%;
+    
+    background: linear-gradient(63deg, #007bff 45%,#0069ff 55%);
+    
+    border: none;
+    outline: none;
+
+    padding: 5px;
+
+    color: white;
+    box-shadow: 3px 3px 3px black;
+}
+.logout{
+    cursor:pointer;
+}
+@media(max-width:700px){
+    .adm{
+        display: none;
+    }
+}
+@media(max-width:750px){
+    .card-login{
+        width: 60%;
+    }
+}
