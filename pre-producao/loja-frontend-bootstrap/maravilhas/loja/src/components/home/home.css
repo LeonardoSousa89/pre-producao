@@ -5,10 +5,6 @@
 .d-block{
     height: 400px;
 }
-/*
-.headerAnimation{
-    margin: 10px 10px;
-}*/
 .card1{
     grid-area: card1;   
 }
@@ -113,7 +109,7 @@
 }
 .title{
     margin-left: 3em;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.1);
 
     max-width: 86%;
 
@@ -128,10 +124,6 @@
 .homeLittleDeviceComponent{
     display: none;
 }
-
-
-
-/* mobile */
 @media(max-width:800px){
   .homeLargeDeviceComponent{
         display: none;
@@ -178,18 +170,6 @@
         letter-spacing: 0.8px;
     
         overflow: hidden;
-    }
-    .footerHomeLittleDeviceComponent{
-
-    }
-    .titleLittleDevicesComponent{
-
-    }
-    .phoneLittleDeviceComponentHome{
-
-    }
-    .mailLittleDeviceComponentHome{
-
     }
     .d-block{
         height: 200px;

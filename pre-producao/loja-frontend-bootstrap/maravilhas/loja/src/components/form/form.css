@@ -77,6 +77,9 @@
     .first,.second{
         margin-bottom: 100px;
     }
+    .alt{
+    margin-bottom: 10px;
+    }
 }
 @media(max-width:450px){
    .noteSmall{
@@ -84,11 +87,17 @@
    }
    .first,.second{
     margin-bottom: 100px;
-}
+    }   
+  .alt{
+    margin-bottom: 10px;
+    }
 }
 @media(min-width:800px){
     .first,.second{
         margin-bottom: 100px;
+    }
+      .alt{
+    margin-bottom: 10px;
     }
 }
 @media(min-width:1200px){
@@ -100,14 +109,11 @@
         flex-direction: column;
         justify-content: center;
 
-        max-height: 1300px;
+        max-height: 1500px;
     }
     .formComponent{
         margin: 0px 200px;
     }.cardContractComponent{
         margin-bottom: 60px;
-    }
-    .first,.second{
-        margin-bottom: 100px;
     }
 }

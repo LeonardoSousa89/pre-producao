@@ -1,0 +1,365 @@
+.largeDeviceAboutComponent{
+ display:flex;
+ flex-direction:column;   
+}
+.banner{
+   background:rgba(0,0,0,0.9);
+   max-height:450px;
+}
+.insideBanner{
+    display:grid;
+    grid-template-columns: 250px 250px 500px;
+    grid-template-rows:   200px 100px 200px;
+    grid-template-areas:
+        'area1  area2'
+        'area3  area3'
+    ;
+
+    margin:10%  25%;
+}
+.area1{
+    grid-area:area1;
+    background-color:rgba(0,0,0,0.7);
+    border-top-left-radius:12px;
+}
+.area2{
+    grid-area:area2;
+    background:linear-gradient(90deg, #F0FFF0 25%, #E0FFFF 45%, #E0FFFF 30% );
+    border-top-right-radius:12px;
+
+    overflow-x: hidden;
+}
+.area3{
+    grid-area:area3;
+    background-color:rgba(0,0,0,0.7);
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius:12px;
+}
+.area1, .area3{
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+    padding:10px;
+    color:white;
+}
+.area1 i{
+    text-decoration: underline;
+} 
+.quem{
+    margin:0.5em 0.5em;
+    animation:quemmovexside 2s ease-in-out alternate infinite;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.3);
+}
+.somos{
+    margin:1em 1em;
+    animation:somosmovexside 2s ease-in-out alternate infinite;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.3);
+}
+.quem,.somos{
+    font-size:xx-large;
+    text-shadow:3px 3px 3px blue;
+    background:rgba(0,0,0,0.1);
+    padding:5px;
+}
+.apresentacao{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 320px 320px;
+    grid-template-areas: 
+        'avatar   seller'
+    ;
+
+    overflow: hidden;
+}
+.avatar{
+    grid-area:avatar;
+    animation: profilemovexside 5s ease-in-out normal;
+}
+.euComponent{
+    grid-area:seller;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px;
+}
+.euComponent h3{
+    margin-top: 115%;
+    font-weight: lighter;
+
+    animation: profiledescriptionmovexside 5s ease-in normal;
+}
+.euComponent em{
+    font-weight: bold;
+}
+.euComponent i{
+    text-decoration: underline;
+}
+.missaoConteiner{
+    background-color: whitesmoke;
+    padding: 5px;
+}
+.missao,.visao,.valores{
+    background-color: pink;
+    }
+.missao strong{
+    margin-right: 10px;
+}
+.visao strong{
+    margin-right: 10px;
+}
+.valores strong{
+    margin-right: 10px;
+}
+.titleClientsPost{
+    margin: 30px 0;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+}
+.titleClientsPost h5{
+    padding: 3px;
+    margin: 5px;
+}
+.cardClientes{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    padding: 50px;
+}
+.firstClient,.secondClient{
+    border-radius: 6px;
+    background-color: whitesmoke;
+    height: 800px;
+    width: 80%;
+
+    padding: 20px;
+
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.9);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    overflow: hidden;
+}
+.firstClient{
+    grid-area:cliente1;
+}
+.secondClient{
+    grid-area:cliente2;
+
+    margin-left: 20%;
+}
+.cardClientes{
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-areas:
+        'cliente1   cliente2'
+    ;
+}
+.profilepost{
+    height: 40%;
+}
+.clientname{
+    width: 100%;
+    margin: 3px 0;
+    background-color: aqua;
+
+    padding: 5px;
+}
+.clientargs{
+    margin: 10px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.littleDeviceAboutComponent{
+    display:none;
+}
+@keyframes quemmovexside{
+		from{
+			transform: translateX(106%);
+		}
+		to{
+			transform: translateX(6%);
+		}
+	}   
+@keyframes somosmovexside{
+		from{
+			transform: translateX(15%);
+		}
+		to{
+			transform: translateX(120%);
+		}
+	}
+@keyframes profilemovexside{
+    from{
+        transform: translateX(-600px);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes profiledescriptionmovexside{
+    from{
+        transform: translateX(600px);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@media(max-width:300px){
+    .cardClientes{
+        display: none;
+        visibility: hidden;
+        max-height: 5px;
+        overflow: hidden;
+    }
+    .titleClientsPost{
+        display: none;
+    }
+}
+@media(max-width:500px){
+    .bannerLittleDeviceComponent{
+        display: none;
+    }
+    .littleDeviceAboutComponent{
+        overflow-x: hidden;
+    }
+    .titleClientsPost{
+        margin: 0.5px 0;
+    }
+   
+}
+ @media(max-width:850px){
+    .largeDeviceAboutComponent{
+        display: none;
+    }
+    .littleDeviceAboutComponent{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        overflow-x: hidden;
+    }
+    .bannerLittleDeviceComponent{
+        padding: 50px;
+        background:rgba(0,0,0,0.9);
+    }
+    .insideBannerLitteDeviceComponent{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: 100% 100%;
+        grid-template-areas: 
+            'lit1  lit2'
+        ;
+
+        color: white;
+        overflow: hidden;
+    }
+    .area1Little,.area2Little{
+        padding: 10px;
+    }
+    .area1Little{
+        grid-area: lit1;
+        border: white solid 1px;
+
+        border-top-left-radius:12px;
+        border-bottom-left-radius: 12px;
+    }
+    .area2Little{
+        grid-area: lit2;
+        border: white solid 1px;
+        background:linear-gradient(90deg, #F0FFF0 25%, #E0FFFF 45%, #E0FFFF 30% );
+        
+        border-top-right-radius:12px;
+        border-bottom-right-radius: 12px;
+
+        overflow-x: hidden;
+    }
+    .quemLittle{
+        color: black;
+        margin:0.5em 0.5em;
+        animation:quemmovexside 2s ease-in-out alternate infinite;
+        box-shadow:3px 3px 3px rgba(0,0,0,0.3);
+    }
+    .somosLittle{
+        color: black;
+        margin:1em 1em;
+        animation:somosmovexside 2s ease-in-out alternate infinite;
+        box-shadow:3px 3px 3px rgba(0,0,0,0.3);
+    }
+    .apresentacaoLittle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        padding: 20px;
+    }
+    .avatarLittle{
+        max-width: 60%;
+        animation: profilemovexside 5s ease-in-out normal;
+    }
+    .euComponentLittle{
+        padding: 20px;
+        
+        animation: profiledescriptionmovexside 5s ease-in normal;
+    }
+    .euComponentLittle h3{
+        font-size: small;
+        width: 80%;
+    }
+    .missao,.visao,.valores{
+        font-size: small;
+        width: 100%;
+    }
+    .cardClientes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .firstClientLittle,.secondClientLittle{
+        border-radius: 6px;
+        background-color: whitesmoke;
+        height: 800px;
+        width: 80%;
+    
+        padding: 20px;
+    
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.9);
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+        overflow: hidden;
+    }
+    .firstClientLittle{
+        margin-bottom: 50px;
+    }
+ } 
+ @media(min-width:851px) and (max-width:900px){
+    .avatar{
+        
+        max-height: 500px;
+        margin: 18% 0;
+    }
+ }  
+ @media(min-width:1200px){
+    .euComponent{
+        margin-top: -10%;
+    }
+ }
+ @media(min-width:1400px){
+    .euComponent{
+        margin-top: -20%;
+    }
+ }

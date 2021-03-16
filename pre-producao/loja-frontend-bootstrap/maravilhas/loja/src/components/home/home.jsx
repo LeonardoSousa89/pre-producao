@@ -39,12 +39,6 @@ export default class Header extends Component{
                 {/** computadores,tablets,tvs,notebooks */}
                <div className="homeLargeDeviceComponent">
                   <Slider />
-
-                 {/** 
-                  * <div className="headerAnimation">
-                        <h4>animação</h4>
-                    </div>
-                 */} 
                   
                   <div className="cardPromotion">
                         <div className="card1">
@@ -123,6 +117,7 @@ export default class Header extends Component{
 
                                         <i><FaPhone className="phoneComponentHome"/><strong className="content">(71) 99198-8733</strong></i>
                                         <i><GrMail  className="mailComponentHome"/><strong  className="content">maravilhasdoseculoxx@gmail.com</strong></i>                                                            
+                                        <i><GrMail  className="mailComponentHome"/><strong  className="content">javandjsantos@gmail.com</strong></i> 
                                
                                 </div>
                         </div>
@@ -133,7 +128,6 @@ export default class Header extends Component{
 
                             
                             
-                            {/**inserir o card em display flex aqui */}
                             <div className="cardPromotionLittleDeviceComponent">
                                     <div className="card1LittleDeviceComponent">
                                     <Cards 
@@ -215,7 +209,8 @@ export default class Header extends Component{
                                         </h4>
 
                                         <i><FaPhone className="phoneLittleDeviceComponentHome"/><strong className="content">(71) 99198-8733</strong></i>
-                                        <i><GrMail  className="mailLittleDeviceComponentHome"/><strong  className="content">javandjsantos@gmail.com</strong></i>                                                            
+                                        <i><GrMail  className="mailLittleDeviceComponentHome"/><strong  className="content">maravilhasdoseculoxx@gmail.com</strong></i>    
+                                        <i><GrMail  className="mailLittleDeviceComponentHome"/><strong  className="content">javandjsantos@gmail.com</strong></i>                                                         
                                
                                 </div>
                         </div>
