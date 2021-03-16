@@ -8,8 +8,6 @@ export default class Header extends Component{
         return(
             <div>
 
-
-
                 <div className="largeDeviceComponent">
 
                     <Nav   className="maravilha" 
@@ -55,7 +53,7 @@ export default class Header extends Component{
                             <Nav.Link className="home-little" href="/">Home</Nav.Link>
                             <Nav.Link className="about-little" href="/about">Sobre</Nav.Link>
                             <Nav.Link className="form-little" href="/form">Formulário</Nav.Link>
-                            <Nav.Link className="loja-little" href="http://www.google.com" target="blank">Loja</Nav.Link>
+                            <Nav.Link className="loja-little" href="https://www.timol.com.br/direto_fabrica.aspx?ref=3080" target="blank">Loja</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
             </Navbar>

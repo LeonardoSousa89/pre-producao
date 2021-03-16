@@ -234,7 +234,6 @@ https://drive.google.com/file/d/1Ej8BQW_DWS8xdJ4YBWWZC4AAk8NbVgNX/view?usp=shari
                <div className="formAdaptableDeviceComponent">
                     
 
-                    {/**here */}
                     <div className="formPosterComponent">
                     <img 
                         className="posterComponent"
@@ -375,8 +374,6 @@ https://drive.google.com/file/d/1Ej8BQW_DWS8xdJ4YBWWZC4AAk8NbVgNX/view?usp=shari
 
                          )
                 }
-                    
-                    {/**here */}
 
 
                </div>

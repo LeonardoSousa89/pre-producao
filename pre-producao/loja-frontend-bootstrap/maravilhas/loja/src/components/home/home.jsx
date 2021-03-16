@@ -26,17 +26,11 @@ import Footer from '../footer/footer'
 
 
 export default class Header extends Component{
-
-    state={
-
-        word : 'Sylocimol'
-    }
-
-
+  
     render(){
         return(
             <div>
-                {/** computadores,tablets,tvs,notebooks */}
+               
                <div className="homeLargeDeviceComponent">
                   <Slider />
                   
@@ -105,7 +99,7 @@ export default class Header extends Component{
                                         <FaFacebookSquare />
                                     </a>
 
-                                    <a href="https://www.linkedin.com" target="blank">
+                                    <a href="https://www.linkedin.com/in/javan-santos-9b2594209/" target="blank">
                                         <FaLinkedin />
                                     </a>
                                 </div>
@@ -122,7 +116,7 @@ export default class Header extends Component{
                                 </div>
                         </div>
 
-                {/** celulares,smart-watch */}
+               
                <div className="homeLittleDeviceComponent">
                    <Slider />
 
@@ -193,7 +187,7 @@ export default class Header extends Component{
                                         <FaFacebookSquare />
                                     </a>
 
-                                    <a href="https://www.linkedin.com" target="blank">
+                                    <a href="https://www.linkedin.com/in/javan-santos-9b2594209/" target="blank">
                                         <FaLinkedin />
                                     </a>
                                 </div>
