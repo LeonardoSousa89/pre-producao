@@ -2,7 +2,7 @@ import React ,{Component} from 'react'
 import './auth.css'
 
 import firebase from '../Db/db'
-import {Navbar, Nav, Alert} from 'react-bootstrap'
+import {Navbar, Nav, Card} from 'react-bootstrap'
 
 import Rotate from '../../assets/rotate.gif'
 
@@ -138,18 +138,9 @@ export default class Auth extends Component{
                 ):(
 
                         <div className="failed">
-                            {/*
-                            
-                            [
-                            'danger',
-                            ].map((variant, idx) => (
-                            <Alert key={idx} variant={variant}>
-                                This is a {variant} alert—check it out!
-                            </Alert>
-                            ))
-                            
-                            */}
-
+                           <Card body
+                           className="cardError"
+                           >Erro ao logar, por favor verifique sua chave de administrador e a senha!</Card>
                         </div>
 
                 )

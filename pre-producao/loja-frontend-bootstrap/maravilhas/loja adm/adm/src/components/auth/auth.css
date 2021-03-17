@@ -70,6 +70,10 @@
 .failed{
     margin-bottom:100px;
 }
+.cardError{
+    margin-top: -60px;
+    font-weight:bold ;
+}
 .logout{
     cursor:pointer;
 }
