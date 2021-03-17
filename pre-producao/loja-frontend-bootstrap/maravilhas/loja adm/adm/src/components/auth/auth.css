@@ -65,13 +65,46 @@
     padding: 5px;
 
     color: white;
-    box-shadow: 3px 3px 3px black;
+    /* box-shadow: 3px 3px 3px black; */
+}
+.failed{
+    margin-bottom:100px;
 }
 .logout{
     cursor:pointer;
 }
+.rotatePhone{
+    display: none;
+}
+@media(max-width:540px){
+    .login{
+        display: none;
+    }
+    body{
+        background-color: black;
+    }
+    .tabela{
+        display: none;
+    }
+    .auth{
+        background-color: black;
+        padding: 60px;
+        overflow-x: hidden;
+        height: 800px;
+
+        color: white;
+    }
+    .rotatePhone{
+        height: 200px;
+        width: 200px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 @media(max-width:700px){
-    .adm{
+    .adm strong{
         display: none;
     }
 }
