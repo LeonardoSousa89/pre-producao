@@ -25,6 +25,7 @@ export default class Auth extends Component{
       }
 
 
+
       submeter = (e) =>{
          let admin = e.target.value
          let name  = e.target.name  
@@ -34,6 +35,7 @@ export default class Auth extends Component{
          })
       }
     
+
 
       login = (e) =>{
          firebase.database()
@@ -62,6 +64,8 @@ export default class Auth extends Component{
             e.preventDefault()
       }
     
+
+
       limpar = () =>{
         this.setState({
             chave:'',
@@ -94,8 +98,8 @@ export default class Auth extends Component{
     render(){
         return(
             <div className="auth">
-                 {                  //alterar para false após teminar a tabela
-                    this.state.auth === true ?
+                 {                  
+                    this.state.auth === false ?
                     ( 
                     
                         <div className="login">
@@ -270,11 +274,3 @@ export default class Auth extends Component{
         )
     }
 }
-
-
-{/**
-
-    falta criar a tabela e renderiza-lá e pôr a 
-    caixa de erro ao logar!
-
-*/}
