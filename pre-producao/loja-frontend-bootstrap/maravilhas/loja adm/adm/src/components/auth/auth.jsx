@@ -16,7 +16,8 @@ export default class Auth extends Component{
           tabela:[],
           auth: false,
           rotate:false,
-          logonFailed: false
+          logonFailed: false,
+          informative:false
         }
     
         this.login = this.login.bind(this)
@@ -68,13 +69,12 @@ export default class Auth extends Component{
         })
       }
   
-    //localhost:3000/auth-administration  
 
     render(){
         return(
             <div className="auth">
-                 {
-                    this.state.auth === false ?
+                 {                  //alterar para false após teminar a tabela
+                    this.state.auth === true ?
                     ( 
                     
                         <div className="login">
@@ -123,6 +123,23 @@ export default class Auth extends Component{
                                     sair
                                     </Nav.Link>
                                 </Navbar>
+                                {
+                                        this.state.informative === false ?
+                                        (
+
+                                            <div className="info">
+                                                <i>nfo</i>
+                                            </div>
+                                        ):(
+
+                                            <p className="info-list">list</p>
+
+                                        )
+                                }
+
+                                <div className="area-administrativa">
+                                    <h4 className="titulo-tabela">Tabela</h4>
+                                </div>
                         </div>
                 )
             }
@@ -140,7 +157,7 @@ export default class Auth extends Component{
                         <div className="failed">
                            <Card body
                            className="cardError"
-                           >Erro ao logar, por favor verifique sua chave de administrador e a senha!</Card>
+                           >Erro ao logar! por favor verifique sua chave de administrador e a senha!</Card>
                         </div>
 
                 )
