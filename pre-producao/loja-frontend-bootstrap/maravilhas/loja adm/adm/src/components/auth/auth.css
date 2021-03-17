@@ -13,18 +13,84 @@
 .tabela{
     width: 100%;
 }
-.info{
+.boas-vindas{
+    border: pink solid 1px;
+    background-color: pink;
+    color: whitesmoke;
+    padding: 10px;
+
+    margin: 30px 10px;
+
+    max-width: 50%;
+
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.boas-vindas hr{
+    background-color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black;
+}
+.info,.info-list{
     position: sticky;
     top:0;
 
-    margin: 100px  80%;
+    margin: 100px  60%;
 
     display: flex;
     flex-direction: column;
     justify-content: start;
+
+    overflow: hidden;
+
+    cursor: pointer;  
+}
+.info{
+    width: 5%;
+    color: whitesmoke;
 }
 .info-list{
+    width: 30%;
+    color: whitesmoke;
+}
+.info-box{
+    border: solid 1px #0069ff;
+    font-weight: bolder;
+
+    background: #0069ff;
+
+    border-radius: 50%;
+
+    padding: 10px;
+
+    width: 100%;
+}
+.info-listed{
+    padding: 10px;
     
+    border: #0069ff solid 1px;
+
+    font-weight: bolder;
+    background:  #0069ff;
+
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.listed-links{
+    color: black;
+    background-color: rgba(0,0,0,0.1);
+    width: 100%;
+}
+.link{
+    padding: 5px;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+}
+.link:hover{
+    font-size: 20px;
+    color: red;
 }
 .area-administrativa{
     display: flex;
@@ -33,7 +99,7 @@
     align-items: center;
 }
 .titulo-tabela{
-    margin: 70px 0;
+    margin: 20px 0;
     width: 60%;
     padding: 5px;
     background: rgba(0,0,0,0.1);
@@ -132,6 +198,7 @@
         justify-content: center;
     }
 }
+
 @media(max-width:700px){
     .adm strong{
         display: none;
@@ -141,4 +208,14 @@
     .card-login{
         width: 60%;
     }
+}
+@media(max-width:800px){
+    .info,.info-list{
+        margin-left: 20%;
+    }
+    .info{
+        height:50px ;
+        width: 50px;
+    }
+
 }

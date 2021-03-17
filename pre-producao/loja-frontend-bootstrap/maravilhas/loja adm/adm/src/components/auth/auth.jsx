@@ -123,16 +123,63 @@ export default class Auth extends Component{
                                     sair
                                     </Nav.Link>
                                 </Navbar>
+
+                                <p className="boas-vindas">
+                                    <h3>Sejam Bem-Vindos!</h3>
+                                    <br/>
+                                    Para ajudá - los em sua atividades,
+                                    organizei links<br/>
+                                    para mantê-los informados a respeito de legislação,<br/>
+                                    manual do banco de dados e artigos de narketing <br/>que contribuirão
+                                    com o sucesso de seu trabalho!
+                                    <br/>
+                                    <br />
+                                    <hr/>
+                                    Para acessar o acervo de informações basta clicar no icone de Info.
+                                    </p>
+
                                 {
                                         this.state.informative === false ?
                                         (
 
                                             <div className="info">
-                                                <i>nfo</i>
+                                                <i  className="info-box"
+                                                    onClick={()=>this.setState({
+                                                        informative:true
+                                                    })}
+                                                >info</i>
                                             </div>
                                         ):(
 
-                                            <p className="info-list">list</p>
+                                            <div className="info-list">
+                                                <i className="info-listed"
+                                                    onClick={()=>this.setState({
+                                                        informative:false
+                                                    })}
+                                                > &lt; 
+                                                </i>
+                                                <ul className="listed-links">
+                                                        <ul className="link">
+                                                            <a href="https://www.gov.br/defesa/pt-br/acesso-a-informacao/lei-geral-de-protecao-de-dados-pessoais-lgpd"
+                                                               target="blank">
+                                                                LGPD</a></ul>
+                                                        <ul className="link">
+                                                            <a href="https://firebase.google.com/docs?hl=pt-br"
+                                                               target="blank">
+                                                                Firebase doc
+                                                                </a></ul>
+                                                        <ul className="link">
+                                                            <a href="https://blog.hotmart.com/pt-br/o-que-e-marketing-digital/"
+                                                               target="blank">
+                                                                Marketing Digital
+                                                                </a></ul>
+                                                        <ul className="link">
+                                                            <a href="https://www.udemy.com/home/my-courses/learning/"
+                                                               target="blank">
+                                                                Cursos
+                                                                </a></ul>
+                                                    </ul>
+                                            </div>
 
                                         )
                                 }
@@ -140,6 +187,8 @@ export default class Auth extends Component{
                                 <div className="area-administrativa">
                                     <h4 className="titulo-tabela">Tabela</h4>
                                 </div>
+
+
                         </div>
                 )
             }
