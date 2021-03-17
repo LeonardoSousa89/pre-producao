@@ -153,9 +153,9 @@ export default class Auth extends Component{
                                     <h3>Sejam Bem-Vindos!</h3>
                                     <br/>
                                     Para ajudá - los em sua atividades,
-                                    organizei links<br/>
-                                    para mantê-los informados a respeito de legislação,<br/>
-                                    manual do banco de dados e artigos de narketing <br/>que contribuirão
+                                    organizei links
+                                    para mantê-los informados a respeito de legislação,
+                                    manual do banco de dados e artigos de marketing que contribuirão
                                     com o sucesso de seu trabalho!
                                     <br/>
                                     <br />
