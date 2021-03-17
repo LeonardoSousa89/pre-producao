@@ -2,7 +2,7 @@ import React ,{Component} from 'react'
 import './auth.css'
 
 import firebase from '../Db/db'
-import {Navbar, Nav, Card} from 'react-bootstrap'
+import {Navbar, Nav, Card, Table} from 'react-bootstrap'
 
 import Rotate from '../../assets/rotate.gif'
 
@@ -68,7 +68,28 @@ export default class Auth extends Component{
             senha:''
         })
       }
-  
+      
+
+        lista = () =>{
+            firebase.database().ref('clientes').on('value', (snapshot)    =>{
+            let tabela = this.state
+            tabela.tabela = []
+
+            snapshot.forEach((dados)=>{
+             tabela.tabela.push({
+                    nome:dados.val().nome,
+                    email:dados.val().email,
+                    msg:dados.val().msg
+                }) 
+            })
+            this.setState(tabela)
+        })
+    } 
+     
+    componentDidMount = () =>{
+        this.lista()
+    }
+
 
     render(){
         return(
@@ -186,6 +207,30 @@ export default class Auth extends Component{
 
                                 <div className="area-administrativa">
                                     <h4 className="titulo-tabela">Tabela</h4>
+                                        <p>somente leitura *</p>
+                                    <Table striped bordered hover>
+                                            <thead>
+                                                <tr>
+                                              
+                                                <th>Nome</th>
+                                                <th>Email</th>
+                                                <th>Mensagem</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                               {
+                                                   this.state.tabela.map((registros,index)=>{
+                                                       return(
+                                                           <tr>
+                                                               <td>{registros.nome}</td>
+                                                               <td>{registros.email}</td>
+                                                               <td>{registros.msg}</td>
+                                                           </tr>
+                                                       )
+                                                   })
+                                               }
+                                            </tbody>
+                                            </Table>
                                 </div>
 
 
