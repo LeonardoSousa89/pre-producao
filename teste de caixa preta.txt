@@ -1,0 +1,103 @@
+
+			======
+			testes
+			======
+
+
+integração com o banco de dados:
+----------------------------------------
+insira os dados no formulário e
+no sistema de recebimento de dados
+(site - 2) ou no banco firebase
+verifique se a tabela foi 
+preenchida com as informações inseridas
+no formulário.
+-----------------------------------------
+
+
+
+
+liberação de pdf:
+----------------------------------------
+após a inserção dos dados se é esperado
+a liberação do conteúdo em pdf.
+-----------------------------------------
+
+
+
+
+não inserção de dados no campo email:
+----------------------------------------
+caso o usuário não insira valores no 
+campo email é esperado uma 
+mensagem de erro.
+-----------------------------------------
+
+
+
+click no pdf liberado:
+----------------------------------------
+observe se ao clicar no pdf liberado,
+ele direciona a outra página e libera
+o conteúdo gratuito.
+-----------------------------------------
+
+
+
+
+botões:
+----------------------------------------
+verifique se os botões estão fazendo o
+que lhes é designado.
+-----------------------------------------
+
+
+
+
+lentidão em carregamento de página:
+----------------------------------------
+observe se a página carrega rapidamente
+-----------------------------------------
+
+
+
+
+lentidão em carregamento de página
+com alto acesso:
+----------------------------------------
+convide um grupo grande de pessoas 
+(minimo de 20 pessoas) e distribua este 
+link e faça um teste de performance, 
+verificando se há lentidão
+no carregamento da página.
+-----------------------------------------
+
+
+
+
+distorção em exibição de página:
+-----------------------------------------
+verifique se não há anomalias na página
+(desorganização na apresentação
+ da página).
+-----------------------------------------
+
+
+
+
+animação:
+-----------------------------------------
+verifique se não há atrasos ou 
+travamento da página na animação(seção
+sobre).
+-----------------------------------------
+
+
+
+
+velocidade de exibição da página:
+-----------------------------------------
+passe entre as páginas vérias vezes e 
+análise se há lentidão na mudança de 
+páginas.
+-----------------------------------------
